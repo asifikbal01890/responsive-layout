@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Query</title>
+    <style>
+        body {
+            max-width: 1600px;
+            margin: 30px auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+        }
+
+        .food {
+            border: 1px solid aqua;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .image {
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+            /* border-radius: left-top top-right right-bottom bottom-left; */
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                background-color: aqua;
+            }
+        }
+        @media screen and (min-width:576px) and (max-width:768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:992px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- .container>.food*12>img[src="/images.jpg"]+p{lorem10}*3 -->
+        <div class="container">
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+            <div class="food">
+                <img class="image" src="/images.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, natus.</p>
+                <p>Price : 1200$</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
